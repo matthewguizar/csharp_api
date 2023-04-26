@@ -30,7 +30,7 @@ builder.Services.AddCors((options) =>
                     .AllowCredentials();
             });
     });
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => {
